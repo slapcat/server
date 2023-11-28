@@ -78,6 +78,7 @@ class AccountManager implements IAccountManager {
 		self::PROPERTY_ROLE => self::SCOPE_LOCAL,
 		self::PROPERTY_TWITTER => self::SCOPE_LOCAL,
 		self::PROPERTY_WEBSITE => self::SCOPE_LOCAL,
+		self::PROPERTY_ANNIVERSARYDATE => self::SCOPE_LOCAL,
 	];
 
 	public function __construct(
@@ -674,6 +675,12 @@ class AccountManager implements IAccountManager {
 				'name' => self::PROPERTY_BIRTHDATE,
 				'value' => '',
 				'scope' => $scopes[self::PROPERTY_BIRTHDATE],
+			],
+
+			[
+				'name' => self::PROPERTY_ANNIVERSARYDATE,
+				'value' => '',
+				'scope' => $scopes[self::PROPERTY_ANNIVERSARYDATE],
 			],
 
 			[

@@ -170,6 +170,10 @@ OCA = OCA || {};
 					$element: $('#ldap_attr_birthdate'),
 					setMethod: 'setBirthdateAttribute'
 				},
+				ldap_attr_anniversarydate: {
+					$element: $('#ldap_attr_anniversarydate'),
+					setMethod: 'setAnniversaryDateAttribute'
+				},
 			};
 			this.setManagedItems(items);
 		},
@@ -508,6 +512,15 @@ OCA = OCA || {};
 		 */
 		setBirthdateAttribute: function(attribute) {
 			this.setElementValue(this.managedItems.ldap_attr_birthdate.$element, attribute);
+		},
+
+		/**
+		 * sets the attribute for the Nextcloud user profile anniversary date
+		 *
+		 * @param {string} attribute
+		 */
+		setAnniversaryDateAttribute: function(attribute) {
+			this.setElementValue(this.managedItems.ldap_attr_anniversarydate.$element, attribute);
 		},
 
 		/**
