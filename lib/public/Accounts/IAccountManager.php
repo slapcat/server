@@ -166,6 +166,11 @@ interface IAccountManager {
 	 */
 	public const PROPERTY_PRONOUNS = 'pronouns';
 
+  /**
+   * @since 28.0.0
+   */
+	public const PROPERTY_ANNIVERSARYDATE = 'anniversarydate';
+	
 	/**
 	 * The list of allowed properties
 	 *
@@ -187,6 +192,7 @@ interface IAccountManager {
 		self::PROPERTY_ROLE,
 		self::PROPERTY_TWITTER,
 		self::PROPERTY_WEBSITE,
+		self::PROPERTY_ANNIVERSARYDATE,
 	];
 
 

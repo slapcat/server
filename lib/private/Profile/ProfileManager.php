@@ -67,6 +67,8 @@ class ProfileManager implements IProfileManager {
 		IAccountManager::PROPERTY_ORGANISATION,
 		IAccountManager::PROPERTY_ROLE,
 		IAccountManager::PROPERTY_PRONOUNS,
+		IAccountManager::PROPERTY_BIRTHDATE,
+		IAccountManager::PROPERTY_ANNIVERSARYDATE,
 	];
 
 	public function __construct(
@@ -404,6 +406,14 @@ class ProfileManager implements IProfileManager {
 			IAccountManager::PROPERTY_PRONOUNS => [
 				'appId' => self::CORE_APP_ID,
 				'displayId' => $this->l10nFactory->get('lib')->t('Pronouns'),
+			],
+			IAccountManager::PROPERTY_BIRTHDATE => [
+				'appId' => self::CORE_APP_ID,
+				'displayId' => $this->l10nFactory->get('lib')->t('Birthday'),
+			],
+			IAccountManager::PROPERTY_ANNIVERSARYDATE => [
+				'appId' => self::CORE_APP_ID,
+				'displayId' => $this->l10nFactory->get('lib')->t('Anniversary'),
 			],
 		];
 

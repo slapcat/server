@@ -139,6 +139,12 @@ class Converter {
 					$dateProperty->setDateTime($birthdate);
 					$vCard->add($dateProperty);
 					break;
+				case IAccountManager::PROPERTY_ANNIVERSARYDATE:
+					$vCard->add(new Text($vCard, 'ANNIVERSARY', substr($property->getValue(), 0, 8), ['VALUE' => 'DATE',  'X-NC-SCOPE' => $scope]));
+					/* iOS compatibility */
+					$vCard->add(new Text($vCard, 'ITEM1.X-ABDATE', substr($property->getValue(), 0, 8), ['TYPE' => 'pref',  'X-NC-SCOPE' => $scope]));
+					$vCard->add(new Text($vCard, 'ITEM1.X-ABLABEL', '_$!<Anniversary>!$_', ['X-NC-SCOPE' => $scope]));
+					break;
 			}
 		}
 

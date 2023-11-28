@@ -140,6 +140,7 @@ style('user_ldap', 'settings');
 				<p><label for="ldap_attr_biography"> <?php p($l->t('Biography Field')); ?></label><input type="text" id="ldap_attr_biography" name="ldap_attr_biography" title="<?php p($l->t('User profile Biography will be set from the specified attribute')); ?>" data-default="<?php p($_['ldap_attr_biography_default']); ?>"></p>
 				<p><label for="ldap_attr_birthdate"> <?php p($l->t('Birthdate Field')); ?></label><input type="text" id="ldap_attr_birthdate" name="ldap_attr_birthdate" title="<?php p($l->t('User profile Date of birth will be set from the specified attribute')); ?>" data-default="<?php p($_['ldap_attr_birthdate_default']); ?>"></p>
 				<p></p><label for="ldap_attr_pronouns"> <?php p($l->t('Pronouns Field')); ?></label><input type="text" id="ldap_attr_pronouns" name="ldap_attr_pronouns" title="<?php p($l->t('User profile Pronouns will be set from the specified attribute')); ?>" data-default="<?php p($_['ldap_attr_pronouns_default']); ?>"></p>
+				<p><label for="ldap_attr_anniversarydate"> <?php p($l->t('Anniversary Field')); ?></label><input type="text" id="ldap_attr_anniversarydate" name="ldap_attr_anniversarydate" title="<?php p($l->t('User profile Anniversary Date will be set from the specified attribute')); ?>" data-default="<?php p($_['ldap_attr_anniversarydate_default']); ?>"></p>
 			</div>
 		</div>
 		<?php print_unescaped($_['settingControls']); ?>
