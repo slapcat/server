@@ -644,6 +644,7 @@ class Configuration {
 			'ldap_attr_birthdate' => 'ldapAttributeBirthDate',
 			'ldap_attr_anniversarydate' => 'ldapAttributeAnniversaryDate',
 			'ldap_attr_pronouns' => 'ldapAttributePronouns',
+			'ldap_attr_anniversarydate' => 'ldapAttributeAnniversaryDate',
 		];
 		return $array;
 	}
