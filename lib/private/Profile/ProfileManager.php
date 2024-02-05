@@ -67,6 +67,8 @@ class ProfileManager implements IProfileManager {
 		IAccountManager::PROPERTY_ORGANISATION,
 		IAccountManager::PROPERTY_ROLE,
 		IAccountManager::PROPERTY_PRONOUNS,
+		IAccountManager::PROPERTY_BIRTHDATE,
+		IAccountManager::PROPERTY_ANNIVERSARYDATE,
 	];
 
 	public function __construct(
@@ -253,6 +255,8 @@ class ProfileManager implements IProfileManager {
 					// Add avatar visibility
 					$profileParameters['isUserAvatarVisible'] = $this->isProfileFieldVisible($property, $targetUser, $visitingUser);
 					break;
+				case IAccountManager::PROPERTY_BIRTHDATE:
+				case IAccountManager::PROPERTY_ANNIVERSARYDATE:
 			}
 		}
 
@@ -404,6 +408,14 @@ class ProfileManager implements IProfileManager {
 			IAccountManager::PROPERTY_PRONOUNS => [
 				'appId' => self::CORE_APP_ID,
 				'displayId' => $this->l10nFactory->get('lib')->t('Pronouns'),
+			],
+			IAccountManager::PROPERTY_BIRTHDATE => [
+				'appId' => self::CORE_APP_ID,
+				'displayId' => $this->l10nFactory->get('lib')->t('Birthday'),
+			],
+			IAccountManager::PROPERTY_ANNIVERSARYDATE => [
+				'appId' => self::CORE_APP_ID,
+				'displayId' => $this->l10nFactory->get('lib')->t('Anniversary'),
 			],
 		];
 

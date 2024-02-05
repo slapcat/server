@@ -181,7 +181,10 @@ class Configuration {
 		'ldapAdminGroup' => '',
 		'ldapAttributeBirthDate' => null,
 		'ldapAttributeAnniversaryDate' => null,
+<<<<<<< HEAD
 		'ldapAttributePronouns' => null,
+=======
+>>>>>>> 459355f4e8d (Fixing merged code)
 	];
 
 	public function __construct(string $configPrefix, bool $autoRead = true) {
@@ -563,7 +566,10 @@ class Configuration {
 			'ldap_admin_group' => '',
 			'ldap_attr_birthdate' => '',
 			'ldap_attr_anniversarydate' => '',
+<<<<<<< HEAD
 			'ldap_attr_pronouns' => '',
+=======
+>>>>>>> 459355f4e8d (Fixing merged code)
 		];
 	}
 
