@@ -86,6 +86,7 @@ use Psr\Log\LoggerInterface;
  * @property string $ldapAdminGroup
  * @property string $ldapAttributeBirthDate
  * @property string $ldapAttributePronouns
+ * @property string ldapAdminGroup
  * @property string ldapAttributeAnniversaryDate
  */
 
