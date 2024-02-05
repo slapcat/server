@@ -181,10 +181,7 @@ class Configuration {
 		'ldapAdminGroup' => '',
 		'ldapAttributeBirthDate' => null,
 		'ldapAttributeAnniversaryDate' => null,
-<<<<<<< HEAD
 		'ldapAttributePronouns' => null,
-=======
->>>>>>> 459355f4e8d (Fixing merged code)
 	];
 
 	public function __construct(string $configPrefix, bool $autoRead = true) {
@@ -565,11 +562,8 @@ class Configuration {
 			'ldap_attr_biography' => '',
 			'ldap_admin_group' => '',
 			'ldap_attr_birthdate' => '',
-			'ldap_attr_anniversarydate' => '',
-<<<<<<< HEAD
 			'ldap_attr_pronouns' => '',
-=======
->>>>>>> 459355f4e8d (Fixing merged code)
+			'ldap_attr_anniversarydate' => '',
 		];
 	}
 
@@ -648,7 +642,6 @@ class Configuration {
 			'ldap_attr_biography' => 'ldapAttributeBiography',
 			'ldap_admin_group' => 'ldapAdminGroup',
 			'ldap_attr_birthdate' => 'ldapAttributeBirthDate',
-			'ldap_attr_anniversarydate' => 'ldapAttributeAnniversaryDate',
 			'ldap_attr_pronouns' => 'ldapAttributePronouns',
 			'ldap_attr_anniversarydate' => 'ldapAttributeAnniversaryDate',
 		];

@@ -89,7 +89,6 @@ use Psr\Log\LoggerInterface;
  * @property string ldapAttributeAnniversaryDate
  */
 
->>>>>>> 459355f4e8d (Fixing merged code)
 class Connection extends LDAPUtility {
 	private ?\LDAP\Connection $ldapConnectionRes = null;
 	private string $configPrefix;

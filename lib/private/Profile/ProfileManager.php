@@ -66,9 +66,12 @@ class ProfileManager implements IProfileManager {
 		IAccountManager::PROPERTY_HEADLINE,
 		IAccountManager::PROPERTY_ORGANISATION,
 		IAccountManager::PROPERTY_ROLE,
+<<<<<<< HEAD
 		IAccountManager::PROPERTY_PRONOUNS,
 		IAccountManager::PROPERTY_BIRTHDATE,
 		IAccountManager::PROPERTY_ANNIVERSARYDATE,
+=======
+>>>>>>> 1a6ea57e6b1 (Undo partial UI changes)
 	];
 
 	public function __construct(
@@ -255,8 +258,6 @@ class ProfileManager implements IProfileManager {
 					// Add avatar visibility
 					$profileParameters['isUserAvatarVisible'] = $this->isProfileFieldVisible($property, $targetUser, $visitingUser);
 					break;
-				case IAccountManager::PROPERTY_BIRTHDATE:
-				case IAccountManager::PROPERTY_ANNIVERSARYDATE:
 			}
 		}
 
